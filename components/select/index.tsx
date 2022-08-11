@@ -20,7 +20,7 @@ export default function MUISelect() {
     value={selectedCompany}>
         {companies && ["All",...companies].map((company: string, index: number)=> {
       return(
-        <option value={company}>{company}</option>
+        <option key={index} value={company}>{company}</option>
         )
        })}
 

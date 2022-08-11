@@ -13,7 +13,7 @@ function JobsCard() {
 
   useEffect(() => {
     dispatch(fetchJobs());
-  }, []);
+  }, [dispatch]);
 
 
   const recentJobHandle = (val) => {
