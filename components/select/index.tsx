@@ -9,7 +9,7 @@ export default function MUISelect() {
   const selectedCompany = useSelector(getSelectedCompany);
   const dispatch = useDispatch();
 
-  const handleChange = (event: SelectChangeEvent) => {
+  const handleChange = (event) => {
     dispatch(selectCompany(event.target.value))
   };
   return (
